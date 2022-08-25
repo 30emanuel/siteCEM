@@ -16,10 +16,10 @@
             <div class="nav__content bd-grid">
                 <div class="nav__menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">Sobre</a></li>
+                        <li class="nav__item"><a href="#inicio" class="nav__link">Inicio</a></li>
     
                         <li class="nav__item dropdown">
-                            <a href="#" class="nav__link dropdown__link">Etapas de Ensino<i class='bx bx-chevron-down dropdown__icon'></i></a>               
+                            <a href="#ensinos" class="nav__link dropdown__link">Etapas de Ensino<i class='bx bx-chevron-down dropdown__icon'></i></a>               
     
                             <ul class="dropdown__menu">
                                 <li class="dropdown__item"><a href="#" class="nav__link">Maternal</a></li>
@@ -51,7 +51,7 @@
             </div>
         </nav>
     </header>
-    <section class="introducao">
+    <section id="inicio" class="introducao">
         <div class="intro-conteudo">
             <img class="intro-img" src="./assets/img/alunos.png" alt="">
         </div>
@@ -59,7 +59,30 @@
             <div class="intro-texto">
                 <h1>Centro Educacional de Manhuaçu</h1>
                 <p>A maior, melhor e mais completa estrutura de ensino da região!</p>
-                <button class="intro-btn"><a href="#">Saiba Mais</a></button>
+                <a href="#ensinos"><button class="intro-btn">Saiba Mais</button></a>
+            </div>
+        </div>
+    </section>
+    <section class="ensinos">
+        <h1>Etapas de Ensino</h1>
+        <div id="ensinos" class="ensinos-cards">
+            <div class="cards" id="maternal">
+                <h2>Maternal</h2>
+                <p>de 1 à 5 anos</p>
+                <img class="cards-img" src="assets/img/maternal.jpg" alt="maternal">
+                <button class="cards-btn">Saiba Mais</button>
+            </div>
+            <div class="cards" id="fundamental">
+                <h2>Fundamental</h2>
+                <p>do 1º ao 9º ano</p>
+                <img class="cards-img" src="assets/img/fundamental.jpg" alt="fundamental">
+                <button class="cards-btn">Saiba Mais</button>
+            </div>
+            <div class="cards" id="ensinomedio">
+                <h2>Ensino Medio</h2>
+                <p>da 1ª à 3ª série</p>
+                <img class="cards-img" src="assets/img/ensinomedio.jpg" alt="ensino medio">
+                <button class="cards-btn">Saiba Mais</button>
             </div>
         </div>
     </section>
