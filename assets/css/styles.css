@@ -20,8 +20,10 @@
   font-family: 'Sofia Pro';
   background: no-repeat center/cover url(../img/fundointroducao.png);
   align-items: center;
+  margin-bottom: 50px;
 }
 .intro-conteudo{
+  margin-top: 5vh;
   display: flex;
   flex-direction: row;
   flex-basis: 50%;
@@ -33,14 +35,12 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
 }
 .intro-img img{
-  width: 80%;
+  width: 100%;
 }
 .intro-texto{
   width: 80%;
-  margin-top: 90px;
   padding: 2px;
   color: white;
   text-align: center;
@@ -63,7 +63,6 @@
 button{
   cursor: pointer;
   margin-top: 10px;
-  width: 200px;
   height: 30px;
   background-color: lightcoral;
   border: none;
@@ -77,6 +76,51 @@ button:hover{
   transition: 0.5s;
   color: white;
 }
+.intro-btn{
+  width: 50%;
+}
+
+.sobre{
+  width: 100%;
+  margin-top: 50px;
+  overflow: hidden;
+  align-items: center;
+  background-color: #6D28D9;
+  justify-content: center;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+.sobre h1{
+  font-size: 50px;
+  color: #28124b;
+  padding-left: 2%;
+  font-family: 'Sofia Pro';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 30px;
+}
+
+.carrossel{
+  display: flex;
+  box-shadow: 2px 2px 4px black;
+  overflow: hidden;
+  margin: 20px auto;
+  height: 500px;
+  width: 500px;
+}
+
+.container{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.container img{
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+}
+
 
 .ensinos{
   width: 100%;
@@ -125,7 +169,17 @@ button:hover{
   background-color: lightyellow;
 }
 
-@media (max-width: 700px){
+
+.banner>a:hover{
+  background-color: brown ;
+}
+
+@media (min-height: 1024px){
+  .intro-conteudo{
+    margin-top: 20vh;
+  }
+}
+@media (max-width: 680px){
   .intro-conteudo{
     flex-direction: column;
   }
