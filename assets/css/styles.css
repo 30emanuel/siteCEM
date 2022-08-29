@@ -11,6 +11,9 @@
   margin: 0;
   padding: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 .introducao{
   width: 100%;
   overflow-y: hidden;
@@ -85,26 +88,38 @@ button:hover{
   margin-top: 50px;
   overflow: hidden;
   align-items: center;
-  background-color: #6D28D9;
   justify-content: center;
   padding-bottom: 50px;
   box-sizing: border-box;
+  text-align: center;
 }
-.sobre h1{
+.sobre-texto{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.sobre-texto h1{
   font-size: 50px;
-  color: #28124b;
-  padding-left: 2%;
-  font-family: 'Sofia Pro';
+  color: black;
+  font-family: 'Open Sans';
   text-transform: uppercase;
-  letter-spacing: 2px;
-  padding-top: 30px;
+  letter-spacing: 5px;
+}
+.sobre-texto p{
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  justify-content: center;
+  font-family: 'Sofia Pro';
+  align-items: center;
+  text-align: center;
 }
 
 .carrossel{
   display: flex;
   box-shadow: 2px 2px 4px black;
   overflow: hidden;
-  margin: 20px auto;
+  margin: 30px auto;
   height: 500px;
   width: 500px;
 }
@@ -130,6 +145,7 @@ button:hover{
 .ensinos h1{
   font-size: 40px;
   text-transform: uppercase;
+  font-family: 'Open Sans';
   padding-top: 30px;
   letter-spacing: 2px;
 }
@@ -207,5 +223,8 @@ button:hover{
   }
   .intro-texto p{
     font-size: 15px;
+  }
+  .sobre-texto p {
+    width: 100%;
   }
 }
