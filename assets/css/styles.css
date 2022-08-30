@@ -98,10 +98,11 @@ button:hover{
   align-items: center;
   text-align: center;
 }
-.sobre-texto h1{
+.titulos{
   font-size: 50px;
   color: black;
   font-family: 'Open Sans';
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
@@ -149,7 +150,7 @@ button:hover{
   padding-top: 30px;
   letter-spacing: 2px;
 }
-.ensinos-cards{
+.todos-cards{
   display: flex;
   flex-basis: 33%;
   width: 100%;
@@ -184,6 +185,16 @@ button:hover{
 .cards#ensinomedio{
   background-color: lightyellow;
 }
+.cards#mix{
+  background-color: #ed7410;
+}
+.cards#unopar{
+    background-color: #015ad9;
+}
+.cards#trilhas{
+  background-color: #ffc10a;
+}
+
 
 
 .banner>a:hover{
