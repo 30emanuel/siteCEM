@@ -183,7 +183,7 @@ button:hover{
   background-color: lightcyan;
 }
 .cards#ensinomedio{
-  background-color: lightyellow;
+  background-color: lightskyblue;
 }
 .cards#mix{
   background-color: #ed7410;
@@ -193,6 +193,32 @@ button:hover{
 }
 .cards#trilhas{
   background-color: #ffc10a;
+}
+
+.lista-cursos{
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.lista-cursos h3,li,p{
+  padding: 5px;
+}
+.lista-cursos i{
+  color: white;
+  font-size: 20px;
+}
+.cursos-btn{
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 50%;
+  color: white;
+  margin-bottom: 5px;
+}
+.cursos-btn:hover{
+  background-color: black;
+  color: white;
 }
 
 
@@ -218,6 +244,16 @@ button:hover{
   .intro-texto{
     width: 100%;
     margin-top: -10px;
+  }
+}
+@media (max-width: 500px){
+  .carrossel{
+    width: 100%;
+    height: 100%;
+  }
+  .container img{
+    width: 100%;
+    height: 100%;
   }
 }
 @media (max-width: 389px){
