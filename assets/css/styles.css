@@ -1,4 +1,5 @@
 @import url(menu.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200,300,400,500,600,700,800,900&display=swap');
 
 @font-face {
   font-family: 'Sofia Pro';
@@ -26,7 +27,7 @@ html{
   margin-bottom: 50px;
 }
 .intro-conteudo{
-  margin-top: 5vh;
+  margin-top: 4vh;
   display: flex;
   flex-direction: row;
   flex-basis: 50%;
@@ -141,7 +142,7 @@ button:hover{
 .ensinos{
   width: 100%;
   font-family: 'Sofia Pro';
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .ensinos h1{
   font-size: 40px;
@@ -221,6 +222,163 @@ button:hover{
   color: white;
 }
 
+.contatos{
+  margin-top: 50px;
+  position: absolute;
+  background-color: #015ad9;
+  width: 100%;
+  padding: 40px 100px;
+  font-family: 'Poppins', sans-serif;
+}
+.contatos .titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+.titulo h1{
+  display: flex;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.form{
+  grid-area: form;
+}
+.info{
+  grid-area: info;
+}
+.mapa{
+  grid-area: mapa;
+}
+.contato{
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+.box{
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 5fr 4fr;
+  grid-template-areas: 
+  "form info" 
+  "form mapa";
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+.contato h2{
+  color: #0e3959;
+  font-weight: 500;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.formBox{
+  position: relative;
+  width: 100%;
+}
+.formBox .row50{
+  display: flex;
+  gap: 20px;
+}
+.inputBox{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 50%;
+}
+.formBox .row100 .inputBox{
+  width: 100%;
+}
+.inputBox span{
+  color: #1827ff;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.inputBox input{
+  padding: 10px;
+  font-size: 0.9em;
+  outline: none;
+  border: 1px solid #333;
+}
+.inputBox textarea{
+  padding: 10px;
+  font-size: 0.9em;
+  outline: none;
+  border: 1px solid #333;
+  resize: none;
+  min-height: 200px;
+  margin-bottom: 10px;
+}
+.inputBox input[type="submit"]{
+  background-color: #015ad9;
+  border: none;
+  color: white;
+  font-size: 0.9em;
+  max-width: 120px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.inputBox ::placeholder{
+  color: #999;
+}
+
+.info{
+  background-color: #0e3959;
+}
+.info h2{
+  color: white;
+}
+.info .infoBox div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.info .infoBox div span{
+  min-width: 40px;
+  height: 40px;
+  color: white;
+  background-color: #015ad9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.info .infoBox div p{
+  color: white;
+  font-size: 0.9em;
+}
+.info .infoBox div a{
+  color: white;
+  font-size: 1.1em;
+}
+.redessociais{
+  margin-top: 40px;
+  display: flex;
+}
+.redessociais li{
+  list-style: none;
+  margin-right: 15px;
+}
+.redessociais li a{
+  color: #ccc;
+  font-size: 2em;
+}
+.redessociais li a:hover{
+  color: white;
+}
+.mapa{
+  padding: 0;
+}
+.mapa iframe{
+  min-width: 100%;
+  min-height: 100%;
+}
 
 
 .banner>a:hover{
@@ -230,6 +388,34 @@ button:hover{
 @media (min-height: 1024px){
   .intro-conteudo{
     margin-top: 20vh;
+  }
+}
+@media (max-width: 991px){
+  .contatos{
+    padding: 5%;
+  }
+  .box{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "form"
+    "info"
+    "mapa";
+  }
+  .formBox .row50{
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+  }
+  .inputBox{
+    width: 100%;
+  }
+  .contato{
+    padding: 10%;
+  }
+  .mapa{
+    width: 100%;
+    height: 100%;
   }
 }
 @media (max-width: 680px){
@@ -274,4 +460,18 @@ button:hover{
   .sobre-texto p {
     width: 100%;
   }
+  .contatos{
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  .box{
+    padding: 5%;
+  }
+  .mapa iframe{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
+
+

@@ -48,7 +48,6 @@ a{
   font-size: 1.7rem;
   cursor: pointer;
 }
-/*=== Dropdown ===*/
 .dropdown__link{
   display: flex;
   align-items: center;
@@ -69,7 +68,7 @@ a{
   transform: rotate(180deg);
 }
 
-/*===== NAV =====*/
+
 @media (max-width: 768px){
   .nav{
     position: fixed;
@@ -100,13 +99,13 @@ a{
 .nav__link:hover{
   color: lightcoral;
 }
-/*Show menu*/
+
 .show{
   left: 0;
 }
 
 
-/*=== Dropdown ===*/
+
 .dropdown__link{
   display: flex;
   align-items: center;
@@ -129,7 +128,7 @@ a{
 .dropdown:hover .dropdown__icon{
   transform: rotate(180deg);
 }
-/* ===== MEDIA QUERIES=====*/
+
 
 @media screen and (min-width: 768px){
   body{
