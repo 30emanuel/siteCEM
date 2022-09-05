@@ -391,9 +391,10 @@ footer{
   background-color: brown ;
 }
 
-@media (min-height: 1024px){
-  .intro-conteudo{
-    margin-top: 20vh;
+
+@media (min-width: 1200px){
+  .intro-img{
+    width: 80%;
   }
 }
 @media (max-width: 991px){
