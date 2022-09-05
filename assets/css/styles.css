@@ -1,5 +1,5 @@
 @import url(menu.css);
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;900&display=swap');
 
 @font-face {
   font-family: 'Sofia Pro';
@@ -224,11 +224,10 @@ button:hover{
 
 .contatos{
   margin-top: 50px;
-  position: absolute;
   background-color: #015ad9;
   width: 100%;
   padding: 40px 100px;
-  font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
 }
 .contatos .titulo{
   display: flex;
@@ -254,6 +253,8 @@ button:hover{
 }
 .contato{
   padding: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   background-color: white;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
 }
@@ -296,7 +297,6 @@ button:hover{
   color: #1827ff;
   margin-top: 10px;
   margin-bottom: 5px;
-  font-weight: 600;
 }
 .inputBox input{
   padding: 10px;
@@ -379,7 +379,13 @@ button:hover{
   min-width: 100%;
   min-height: 100%;
 }
-
+footer{
+  background-color: lightgray;
+  margin-top: 20px;
+  font-size: small;
+  color: #333;
+  text-align: center;
+}
 
 .banner>a:hover{
   background-color: brown ;
@@ -409,9 +415,6 @@ button:hover{
   }
   .inputBox{
     width: 100%;
-  }
-  .contato{
-    padding: 10%;
   }
   .mapa{
     width: 100%;
@@ -460,18 +463,17 @@ button:hover{
   .sobre-texto p {
     width: 100%;
   }
-  .contatos{
-    padding: 0px;
-    overflow-x: hidden;
-  }
-  .box{
+  .contato,
+  .form,
+  .info{
     padding: 5%;
   }
-  .mapa iframe{
+  .mapa{
     padding: 0;
+  }
+  .mapa iframe{
     width: 100%;
     height: 100%;
   }
 }
-
 
