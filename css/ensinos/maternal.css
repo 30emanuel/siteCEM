@@ -1,7 +1,6 @@
-@import url(/css/menu.css);
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('/css/sofiapro-light.otf') format('opentype');
+    src: url('../../css/sofiapro-light.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
