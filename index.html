@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="/css/paginicial/pagInicial.css">
     <title>Instituto CEM</title>
     <script src="https://kit.fontawesome.com/a0e8c6083e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
-        <a href="#" class="header__logo"><img src="assets/img/cem-manhuacu.png" width="80px" height="50px" alt="logo cem"></a>
+        <a href="#" class="header__logo"><img src="img/paginicial/cem-manhuacu.png" width="80px" height="50px" alt="logo cem"></a>
         <i class='bx bx-menu header__toggle' id="header-toggle"></i>
         <nav class="nav" id="nav-menu">
             <div class="nav__content bd-grid">
@@ -23,7 +23,7 @@
                             <a href="#ensinos" class="nav__link dropdown__link">Etapas de Ensino<i class='bx bx-chevron-down dropdown__icon'></i></a>               
     
                             <ul class="dropdown__menu">
-                                <li class="dropdown__item"><a href="#" class="nav__link">Maternal</a></li>
+                                <li class="dropdown__item"><a href="/pags/maternal.html" class="nav__link">Maternal</a></li>
                                 <li class="dropdown__item"><a href="#" class="nav__link">Fundamental</a></li>
                                 <li class="dropdown__item"><a href="#" class="nav__link">Ensino Medio</a></li>
                             </ul>
@@ -55,7 +55,7 @@
     <div class="introducao">
         <div class="intro-conteudo">
             <div class="intro-img">
-                <img src="./assets/img/alunos.png" alt="">
+                <img src="img/paginicial/alunos.png" alt="">
             </div>
             <div class="intro-texto">
                 <h1>Centro Educacional de Manhuaçu</h1>
@@ -65,16 +65,16 @@
         </div>
     </div>
     <div id="sobre" class="sobre">
+        <h1 class="titulos">Sobre</h1>
         <div class="carrossel">
             <div class="container" id="img">
-                <img src="assets/img/slide/slide1.jpg" alt="">
-                <img src="assets/img/slide/slide2.jpg" alt="">
-                <img src="assets/img/slide/slide3.jpg" alt="">
-                <img src="assets/img/slide/slide4.jpg" alt="">
+                <img src="img/paginicial/slide/slide1.jpg" alt="">
+                <img src="img/paginicial/slide/slide2.jpg" alt="">
+                <img src="img/paginicial/slide/slide3.jpg" alt="">
+                <img src="img/paginicial/slide/slide4.jpg" alt="">
             </div>
         </div>
         <div class="sobre-texto">
-            <h1 class="titulos">Sobre</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nam magnam mollitia temporibus tempore voluptate excepturi iste in natus, quaerat eaque aliquid nostrum asperiores repellat omnis atque placeat dolor consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta officiis consectetur earum similique error magni odit, sunt temporibus dignissimos. Eius consequatur maxime obcaecati velit rerum debitis cum itaque at similique?</p>
         </div>
     </div>
@@ -84,19 +84,19 @@
             <div class="cards" id="maternal">
                 <h2>Maternal</h2>
                 <p>de 1 à 5 anos</p>
-                <img class="cards-img" src="assets/img/maternal.jpg" alt="maternal">
-                <button class="cards-btn">Saiba Mais</button>
+                <img class="cards-img" src="img/paginicial/maternal.jpg" alt="maternal">
+                <a href="pags/maternal.html"><button class="cards-btn">Saiba Mais</button></a>
             </div>
             <div class="cards" id="fundamental">
                 <h2>Fundamental</h2>
                 <p>do 1º ao 9º ano</p>
-                <img class="cards-img" src="assets/img/fundamental.jpg" alt="fundamental">
+                <img class="cards-img" src="img/paginicial/fundamental.jpg" alt="fundamental">
                 <button class="cards-btn">Saiba Mais</button>
             </div>
             <div class="cards" id="ensinomedio">
                 <h2>Ensino Medio</h2>
                 <p>da 1ª à 3ª série</p>
-                <img class="cards-img" src="assets/img/ensinomedio.jpg" alt="ensino medio">
+                <img class="cards-img" src="img/paginicial/ensinomedio.jpg" alt="ensino medio">
                 <button class="cards-btn">Saiba Mais</button>
             </div>
         </div>
@@ -106,7 +106,7 @@
         <div class="todos-cards">
             <div class="cards"  id="mix">
                 <h2>Instituto Mix</h2>
-                <img class="cards-img" src="assets/img/mix.jpg" alt="Mix">
+                <img class="cards-img" src="/img/paginicial/mix.jpg" alt="Mix">
                 <div class="lista-cursos">
                     <h3>Cursos:</h3>
                     <ul>
@@ -122,7 +122,7 @@
             </div>
             <div class="cards" id="unopar">
                 <h2>Unopar</h2>
-                <img class="cards-img" src="assets/img/unopar.jpg" alt="Unopar">
+                <img class="cards-img" src="img/paginicial/unopar.jpg" alt="Unopar">
                 <div class="lista-cursos">
                     <h3>Cursos:</h3>
                     <ul>
@@ -138,7 +138,7 @@
             </div>
             <div class="cards" id="trilhas">
                 <h2>Trilhas do Futuro</h2>
-                <img class="cards-img" src="assets/img/trilhas.jpg" alt="Trilhas do futuro">
+                <img class="cards-img" src="img/paginicial/trilhas.jpg" alt="Trilhas do futuro">
                 <div class="lista-cursos">
                     <h3>Cursos:</h3>
                     <ul>
@@ -222,6 +222,7 @@
         </div>
     </div>
     <footer><p>Centro Educacional de Manhuaçu - Todos os direitos reservados</p></footer>
-    <script src="assets/js/main.js"></script>
+    <script src="js/carrossel.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>

@@ -1,0 +1,110 @@
+@import url(/css/menu.css);
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('/css/sofiapro-light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.introducao{
+    width: 100%;
+    padding: 15px 0px;
+    height: 90vh;
+    margin-top: 8vh;
+    align-items: center;
+    margin-bottom: 50px;
+    background: #fcb900;
+}
+.intro-conteudo{
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.intro-img{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.intro-img img{
+    width: 100%;
+}
+.intro-texto{
+    width: 100%;
+    color: #6D28D9;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.intro-texto h1{
+    font-weight: bold;
+    font-size: 44px;
+    text-align: center;
+}
+.intro-texto p{
+    align-items: center;
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: center;
+    padding: 10px;
+}
+.sobre{
+    display: flex;
+    font-family: 'Sofia Pro';
+}
+.itemflex50{
+    flex-basis: 50%;
+    width: 100%;
+}
+.sobreimg img{
+    padding: 5px;
+    width: 100%;
+}
+.sobretexto{
+    padding: 0px 10px;
+    text-align: center;
+    height: 90%;
+}
+.sobretexto p{
+    font-weight: 500;
+}
+
+@media (max-width: 900px){
+    .sobre {
+        display: block;
+    }
+}
+@media (max-width: 680px){
+    .intro-conteudo{
+        flex-direction: column;
+    }
+    .intro-img{
+        max-width: 70%;
+        min-width: 40%;
+        margin-top: 10px;
+    }
+    .intro-texto{
+        width: 100%;
+        margin-top: -10px;
+    }
+}
+  @media (max-width: 389px){
+    .intro-conteudo{
+      width: 100%;
+      margin-top: 25%;
+    }
+    .intro-texto{
+      justify-content: center;
+      margin-top: 5px;
+    }
+    .intro-texto h1{
+      font-size: 25px;
+    }
+    .intro-texto p{
+      font-size: 15px;
+    }
+}
