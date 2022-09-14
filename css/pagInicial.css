@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Sofia Pro';
-  src: url('../sofiapro-light.otf') format('opentype');
+  src: url('sofiapro-light.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -29,7 +29,7 @@ html{
   height: 90vh;
   margin-top: 8vh;
   font-family: 'Sofia Pro';
-  background: no-repeat center/cover url('../../img/paginicial/fundointroducao.png');
+  background: no-repeat center/cover url('../img/paginicial/fundointroducao.png');
   align-items: center;
   margin-bottom: 50px;
 }

@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;900&display=swap');
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../../css/sofiapro-light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.introducao{
+    width: 100%;
+    padding: 15px 0px;
+    height: 90vh;
+    margin-top: 8vh;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.intro-conteudo{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.intro-img{
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+.intro-img img{
+    width: 100%;
+}
+.intro-texto{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.intro-texto h1{
+    font-weight: bold;
+    font-size: 44px;
+    text-align: center;
+}
+.intro-texto p{
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+}
+.sobre{
+    display: flex;
+}
+.itemflex50{
+    flex-basis: 50%;
+    width: 100%;
+}
+.sobreimg img{
+    padding: 5px;
+    width: 100%;
+}
+.sobretexto,
+.importancia{
+    padding: 20px 5px;
+    font-family: 'Sofia Pro';
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+.sobretexto p, .importanciatexto p{
+    font-weight: 500;
+}
+
+.importanciaimg img{
+    width: 500px;
+    height: 500px;
+}
+.importanciatexto{
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+.contatos{
+    margin-top: 50px;
+    width: 100%;
+    padding: 10px 50px;
+    font-family: sans-serif;
+}
+.contatos .titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin-bottom: -50px;
+}
+.titulo h1{
+    display: flex;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.mapa{
+    grid-area: mapa;
+}
+.contato{
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: white;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info" 
+    "form mapa";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.contato h2{
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+  
+.formBox{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50{
+    display: flex;
+    gap: 20px;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+.inputBox span{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.inputBox input{
+    padding: 10px;
+    font-size: 0.9em;
+    outline: none;
+    border: 1px solid #333;
+}
+.inputBox textarea{
+    padding: 10px;
+    font-size: 0.9em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 200px;
+    margin-bottom: 10px;
+}
+.inputBox input[type="submit"]{
+    border: none;
+    color: white;
+    font-size: 0.9em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.inputBox ::placeholder{
+    color: #999;
+}
+  
+.info{
+    background-color: #8d158d;
+}
+.info h2{
+    color: white;
+}
+.info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info .infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    color: white;
+    background-color: #682768;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.info .infoBox div p{
+    color: white;
+    font-size: 0.9em;
+}
+.info .infoBox div a{
+    color: white;
+    font-size: 1.1em;
+}
+.redessociais{
+    margin-top: 40px;
+    display: flex;
+}
+.redessociais li{
+    list-style: none;
+    margin-right: 15px;
+}
+.redessociais li a{
+    color: #ccc;
+    font-size: 2em;
+}
+.redessociais li a:hover{
+    color: white;
+}
+.mapa{
+    padding: 0;
+}
+.mapa iframe{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+@media (max-width: 991px){
+    .contatos{
+      padding: 5%;
+    }
+    .box{
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      "form"
+      "info"
+      "mapa";
+    }
+    .formBox .row50{
+      display: flex;
+      gap: 0;
+      flex-direction: column;
+    }
+    .inputBox{
+      width: 100%;
+    }
+    .mapa{
+      width: 100%;
+      height: 100%;
+    }
+}
+@media (max-width: 900px){
+    .sobre {
+        display: block;
+    }
+}
+@media (max-width: 680px){
+    .intro-conteudo{
+        flex-direction: column;
+    }
+    .intro-img{
+        max-width: 70%;
+        min-width: 40%;
+        margin-top: 10px;
+    }
+    .intro-texto{
+        width: 100%;
+        margin-top: -10px;
+    }
+}
+@media (max-width: 500px){
+    .importanciaimg img{
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+    }
+    .importanciatexto{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+  @media (max-width: 389px){
+    .intro-conteudo{
+      width: 100%;
+      margin-top: 25%;
+    }
+    .intro-texto{
+      justify-content: center;
+      margin-top: 5px;
+    }
+    .intro-texto h1{
+      font-size: 25px;
+    }
+    .intro-texto p{
+      font-size: 15px;
+    }
+    .contato,
+    .form,
+    .info{
+      padding: 5%;
+    }
+    .mapa{
+      padding: 0;
+    }
+    .mapa iframe{
+      width: 100%;
+      height: 100%;
+    }
+}
