@@ -1,0 +1,35 @@
+.introducao{
+    background: no-repeat center/cover url('../../img/ensinos/ensinomedio/fundointroducao.png');
+}
+.sobretexto h1{
+    margin-top: -15px;
+    font-size: 25px;
+}
+.sobretexto p{
+    margin-top: -5px;
+}
+.intro-texto{
+    color: #e6e6e6;
+}
+.contatos{
+    background-color: #f4324a;
+}
+.titulo h1{
+    color: #4b4b55;
+}
+.contato h2{
+    color: #4b4b55;
+}
+.inputBox span{
+    color: #4b4b55;
+}
+.inputBox input[type="submit"]{
+    background-color: #4b4b55;
+}
+.info{
+    background-color: #ff516c;
+}
+.info .infoBox div span{
+    background-color: #ffff;
+    color: #fcc755;
+}
