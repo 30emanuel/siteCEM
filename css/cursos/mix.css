@@ -1,0 +1,29 @@
+.introducao{
+    background: no-repeat center/cover url('../../img/cursos/mix/fundointroducao.png');
+    color: white;
+}
+.contatos{
+    background-color: #bc2c2b;
+}
+.titulo h1{
+    color: #fff;
+}
+.contato h2{
+    color: black;
+}
+.inputBox span{
+    color: black;
+}
+.inputBox input[type="submit"]{
+    background-color: #9b1619;
+}
+.info{
+    background-color: #9b1619;
+}
+.info h2{
+    color: #fff;
+}
+.info .infoBox div span{
+    background-color: #f8f8ec;
+    color: #a11b1c;
+}

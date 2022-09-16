@@ -52,6 +52,7 @@ html{
     text-align: center;
     padding: 5px;
 }
+
 .sobre{
     display: flex;
 }
@@ -63,8 +64,7 @@ html{
     padding: 5px;
     width: 100%;
 }
-.sobretexto,
-.importancia{
+.sobretexto{
     padding: 20px 5px;
     font-family: 'Sofia Pro';
     text-align: center;
@@ -72,20 +72,27 @@ html{
     align-items: center;
     height: 90%;
 }
-.sobretexto p, .importanciatexto p{
+.sobretexto p{
     font-weight: 500;
 }
 
-.importanciaimg img{
-    width: 500px;
-    height: 500px;
+.cursos{
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Sofia Pro';
 }
-.importanciatexto{
-    margin-top: 20px;
-    width: 80%;
-    margin-left: 10%;
+.cursos h1{
+    font-size: 44px;
+    text-align: center;
 }
-
+.cursosimg{
+    flex-wrap: wrap;
+}
+.cursosimg img{
+    width: 300px;
+}
 
 .contatos{
     margin-top: 50px;
@@ -267,7 +274,7 @@ html{
     }
 }
 @media (max-width: 900px){
-    .sobre{
+    .sobre {
         display: block;
     }
 }
@@ -278,25 +285,22 @@ html{
     .intro-img{
         max-width: 70%;
         min-width: 40%;
-        margin-top: 10px;
+        margin-top: -50px;
     }
     .intro-texto{
         width: 100%;
-        margin-top: -10px;
+        margin-top: -40px;
     }
 }
-@media (max-width: 500px){
-    .importanciaimg img{
-        width: 100%;
-        height: 100%;
-        padding: 5px;
+@media (max-width: 620px){
+    .cursos{
+        flex-wrap: nowrap;
     }
-    .importanciatexto{
+    .cursosimg img{
         width: 100%;
-        margin-left: 0;
     }
 }
-  @media (max-width: 389px){
+@media (max-width: 389px){
     .intro-conteudo{
       width: 100%;
       margin-top: 25%;
